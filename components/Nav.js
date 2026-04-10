@@ -41,17 +41,17 @@ export default function Nav() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5">
+          <Link href="/" className="flex items-center gap-3">
             <Image
               src="/logo.svg"
               alt="YDC Academy"
-              width={32}
-              height={32}
+              width={48}
+              height={48}
               className="flex-shrink-0"
             />
-            <span className="font-bold text-base text-brand-700 hidden sm:inline">
+            <span className="font-extrabold text-xl text-brand-700 hidden sm:inline">
               YDC Academy
             </span>
           </Link>
