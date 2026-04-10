@@ -57,7 +57,7 @@ export default function TestimonialCarousel({ testimonials }) {
         {testimonials.map((item, i) => (
           <div
             key={i}
-            className="snap-start flex-shrink-0 w-[calc(33.333%-14px)] max-md:w-[85%] bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col gap-4"
+            className="snap-start flex-shrink-0 w-[calc(33.333%-14px)] max-md:w-[85%] bg-white rounded-2xl p-6 shadow-sm flex flex-col gap-4"
           >
             <Icon name="format_quote" size={28} className="text-brand-200" />
             <p className="text-gray-700 leading-relaxed flex-1 text-base">"{item.quote}"</p>
