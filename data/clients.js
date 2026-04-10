@@ -53,5 +53,5 @@ export const stats = [
   { value: '1.000+', label: 'Học viên đã tốt nghiệp' },
   { value: '100+', label: 'Tổ chức đã tham gia' },
   { value: '5+', label: 'Năm đào tạo' },
-  { value: '2 ngày', label: 'Chương trình tập trung' },
+  { value: '150+', label: 'Khóa đã tổ chức' },
 ]

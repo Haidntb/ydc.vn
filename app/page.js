@@ -4,6 +4,7 @@ import Icon from '@/components/Icon'
 import CourseCard from '@/components/CourseCard'
 import LogoTicker from '@/components/LogoTicker'
 import TestimonialCarousel from '@/components/TestimonialCarousel'
+import CountUp from '@/components/CountUp'
 import { clientCategories, stats } from '@/data/clients'
 import { courseSubjects, courseIntro } from '@/data/courses'
 import { fetchCourses } from '@/lib/fetchCourses'
@@ -208,7 +209,7 @@ export default async function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {stats.map((s) => (
               <div key={s.label}>
-                <p className="text-3xl font-extrabold">{s.value}</p>
+                <p className="text-3xl font-extrabold"><CountUp value={s.value} /></p>
                 <p className="text-brand-100 text-sm mt-1">{s.label}</p>
               </div>
             ))}
