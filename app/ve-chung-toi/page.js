@@ -20,7 +20,7 @@ const orgInfo = [
   { label: 'Điện thoại', value: site.phone },
   { label: 'Email', value: site.email },
   { label: 'Đăng ký đấu thầu', value: '19/07/2023 — Hệ thống mạng đấu thầu quốc gia' },
-  { label: 'Giấy phép đào tạo', value: '← cần bổ sung số giấy phép' },
+  { label: 'Giấy phép đào tạo', value: 'Đang cập nhật' },
 ]
 
 const credentials = [
@@ -29,7 +29,7 @@ const credentials = [
     title: 'Giấy phép hoạt động đào tạo',
     issuer: 'Sở Giáo dục và Đào tạo',
     status: 'Còn hiệu lực',
-    note: '← cần bổ sung số',
+    note: null,
   },
   {
     no: '02',
@@ -57,7 +57,7 @@ export default function VeChungToiPage() {
             {/* Left: identity */}
             <div>
               <p className="text-brand-400 text-xs font-bold uppercase tracking-widest mb-3">
-                Hồ Sơ Năng Lực — 2025
+                Hồ Sơ Năng Lực — 2026
               </p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-1">YDC Academy</h1>
               <p className="text-brand-300 text-sm">Công ty TNHH Dịch vụ tư vấn và Đào tạo YDC</p>

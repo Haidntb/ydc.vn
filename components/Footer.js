@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import Icon from '@/components/Icon'
 import { site } from '@/data/site'
 
