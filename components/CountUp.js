@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 
-export default function CountUp({ value, duration = 2000 }) {
+export default function CountUp({ value, duration = 800 }) {
   // Parse: "1.000+" → number 1000, suffix "+"
   // "150+" → 150, "+"
   // "5+" → 5, "+"
@@ -31,7 +31,8 @@ export default function CountUp({ value, duration = 2000 }) {
 
   useEffect(() => {
     if (!started) return
-    const steps = 60
+    const fps = 30
+    const steps = Math.round(duration / (1000 / fps))
     const increment = target / steps
     const interval = duration / steps
     let current = 0
