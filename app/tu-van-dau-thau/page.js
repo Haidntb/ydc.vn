@@ -66,7 +66,7 @@ export default function TuVanDauThauPage() {
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-5">
             Tư Vấn & Hỗ Trợ Đấu Thầu Chuyên Sâu
           </h1>
-          <p className="text-brand-100 text-lg max-w-2xl leading-relaxed">
+          <p className="text-brand-100 text-base sm:text-lg max-w-2xl leading-relaxed">
             Đội ngũ chuyên gia YDC Academy đồng hành cùng quý vị trong mọi giai đoạn của quy trình
             đấu thầu — từ lập hồ sơ, rà soát pháp lý đến đấu thầu qua mạng.
           </p>
@@ -128,7 +128,7 @@ export default function TuVanDauThauPage() {
           <div className="grid md:grid-cols-2 gap-10 items-start">
             <div>
               <p className="text-brand-600 text-sm font-semibold uppercase tracking-wider mb-2">Vì sao chọn YDC</p>
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Đối Tác Tư Vấn Đáng Tin Cậy</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Đối Tác Tư Vấn Đáng Tin Cậy</h2>
               <ul className="space-y-3">
                 {reasons.map((r) => (
                   <li key={r} className="flex items-start gap-3">
@@ -139,7 +139,7 @@ export default function TuVanDauThauPage() {
               </ul>
             </div>
             <div className="bg-brand-50 rounded-2xl p-8 border border-brand-100">
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Phù hợp với</h3>
+              <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-3">Phù hợp với</h3>
               <ul className="space-y-3">
                 {[
                   'Cơ quan nhà nước cần rà soát hồ sơ đấu thầu',
@@ -162,7 +162,7 @@ export default function TuVanDauThauPage() {
       <section className="bg-brand-600 py-14">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-white mb-3">Yêu Cầu Tư Vấn</h2>
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-3">Yêu Cầu Tư Vấn</h2>
             <p className="text-brand-200 text-sm">
               Để lại thông tin — chuyên gia YDC Academy sẽ liên hệ trao đổi trong vòng 24 giờ làm việc.
             </p>

@@ -23,7 +23,7 @@ export default async function PostPage({ params }) {
     return (
       <div className="max-w-3xl mx-auto px-4 py-20 text-center">
         <Icon name="search_off" size={48} className="text-gray-300 mx-auto mb-4" />
-        <h1 className="text-2xl font-bold text-gray-900 mb-3">Không tìm thấy bài viết</h1>
+        <h1 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Không tìm thấy bài viết</h1>
         <p className="text-gray-500 mb-6">Bài viết này không tồn tại hoặc đã bị gỡ.</p>
         <Link href="/tin-tuc" className="text-brand-600 font-semibold hover:underline">
           ← Quay lại Tin Tức
@@ -81,7 +81,7 @@ export default async function PostPage({ params }) {
       {otherPosts.length > 0 && (
         <section className="bg-gray-50 py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <h2 className="text-xl font-bold text-gray-900 mb-6">Bài Viết Khác</h2>
+            <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-6">Bài Viết Khác</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {otherPosts.map((p) => (
                 <Link

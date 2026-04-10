@@ -59,12 +59,12 @@ export default function VeChungToiPage() {
               <p className="text-brand-400 text-xs font-bold uppercase tracking-widest mb-3">
                 Hồ Sơ Năng Lực — 2025
               </p>
-              <h1 className="text-2xl sm:text-4xl font-extrabold mb-1">YDC Academy</h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-1">YDC Academy</h1>
               <p className="text-brand-300 text-sm">Công ty TNHH Dịch vụ tư vấn và Đào tạo YDC</p>
               <p className="text-brand-500 text-xs mt-1">MST: 0110411362</p>
             </div>
             {/* Right: 3 key metrics */}
-            <div className="flex gap-0 divide-x divide-brand-700 border border-brand-700 rounded-xl overflow-hidden flex-shrink-0">
+            <div className="flex gap-0 divide-x divide-brand-700 border border-brand-700 rounded-xl overflow-hidden">
               {[
                 { v: '1.000+', l: 'Học viên' },
                 { v: '100+', l: 'Tổ chức' },
@@ -84,7 +84,7 @@ export default function VeChungToiPage() {
 
         {/* SỨ MỆNH */}
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+          <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
             <span className="w-1 h-6 bg-brand-600 rounded-full inline-block" />
             Sứ Mệnh
           </h2>
@@ -102,7 +102,7 @@ export default function VeChungToiPage() {
 
         {/* TẦM NHÌN */}
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+          <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
             <span className="w-1 h-6 bg-brand-600 rounded-full inline-block" />
             Tầm Nhìn
           </h2>
@@ -120,7 +120,7 @@ export default function VeChungToiPage() {
 
         {/* GIÁ TRỊ CỐT LÕI */}
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+          <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
             <span className="w-1 h-6 bg-brand-600 rounded-full inline-block" />
             Giá Trị Cốt Lõi
           </h2>
@@ -141,7 +141,7 @@ export default function VeChungToiPage() {
 
         {/* THÔNG TIN TỔ CHỨC */}
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+          <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
             <span className="w-1 h-6 bg-brand-600 rounded-full inline-block" />
             Thông Tin Tổ Chức
           </h2>
@@ -161,7 +161,7 @@ export default function VeChungToiPage() {
 
         {/* CHỨNG NHẬN & PHÁP LÝ */}
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+          <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
             <span className="w-1 h-6 bg-brand-600 rounded-full inline-block" />
             Chứng Nhận & Tư Cách Pháp Lý
           </h2>
@@ -189,7 +189,7 @@ export default function VeChungToiPage() {
 
         {/* ĐỘI NGŨ GIẢNG VIÊN */}
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+          <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
             <span className="w-1 h-6 bg-brand-600 rounded-full inline-block" />
             Đội Ngũ Giảng Viên
           </h2>
@@ -197,7 +197,7 @@ export default function VeChungToiPage() {
             {team.map((member) => (
               <div key={member.id} className="border border-gray-200 rounded-xl overflow-hidden">
                 <div className="bg-brand-800 px-5 py-4 flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center overflow-hidden">
                     <Icon name="person" size={20} className="text-white" />
                   </div>
                   <div>
@@ -216,7 +216,7 @@ export default function VeChungToiPage() {
 
         {/* KHÁCH HÀNG TIÊU BIỂU */}
         <section>
-          <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+          <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
             <span className="w-1 h-6 bg-brand-600 rounded-full inline-block" />
             Khách Hàng Tiêu Biểu
           </h2>

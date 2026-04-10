@@ -71,7 +71,7 @@ export default async function TinTucPage() {
           ) : (
             <div className="text-center py-20">
               <Icon name="article" size={48} className="text-gray-300 mx-auto mb-4" />
-              <h2 className="text-xl font-bold text-gray-900 mb-2">Chưa có bài viết nào</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Chưa có bài viết nào</h2>
               <p className="text-gray-500 text-sm">
                 Tin tức và kiến thức đấu thầu sẽ được cập nhật tại đây. Quay lại sau nhé!
               </p>

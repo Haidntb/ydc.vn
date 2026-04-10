@@ -41,7 +41,7 @@ export default function DangKyToChucPage() {
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-5">
             Giải Pháp Đào Tạo Đấu Thầu Cho Tổ Chức
           </h1>
-          <p className="text-brand-100 text-lg max-w-2xl leading-relaxed">
+          <p className="text-brand-100 text-base sm:text-lg max-w-2xl leading-relaxed">
             YDC Academy thiết kế chương trình riêng, triển khai tại đơn vị bạn — linh hoạt thời
             gian, phù hợp quy mô từ <strong className="text-white">10 đến 200+ học viên</strong>.
           </p>
@@ -79,7 +79,7 @@ export default function DangKyToChucPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-10 items-start">
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Lợi Ích Khi Đào Tạo Nội Bộ</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Lợi Ích Khi Đào Tạo Nội Bộ</h2>
               <ul className="space-y-3">
                 {benefits.map((b) => (
                   <li key={b} className="flex items-start gap-3">
@@ -106,9 +106,9 @@ export default function DangKyToChucPage() {
 
       {/* LEAD FORM */}
       <section className="py-14">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">Đăng Ký Chương Trình Đào Tạo</h2>
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Đăng Ký Chương Trình Đào Tạo</h2>
             <p className="text-gray-500 text-sm">
               Để lại thông tin — cán bộ tuyển sinh YDC Academy sẽ liên hệ trong 24 giờ để trao đổi về chương trình phù hợp với tổ chức của bạn.
             </p>

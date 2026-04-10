@@ -27,7 +27,7 @@ export default function LienHePage() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div>
-              <h2 className="text-xl font-bold text-gray-900 mb-6">Thông Tin Liên Hệ</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-6">Thông Tin Liên Hệ</h2>
               <ul className="space-y-5">
                 <li className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-xl bg-brand-100 flex items-center justify-center flex-shrink-0">
