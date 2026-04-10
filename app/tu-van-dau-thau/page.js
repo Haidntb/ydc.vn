@@ -84,7 +84,7 @@ export default function TuVanDauThauPage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((s) => (
-              <div key={s.title} className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-shadow">
+              <div key={s.title} className="bg-white shadow-sm rounded-2xl p-6 hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center mb-4">
                   <Icon name={s.icon} size={24} className="text-brand-600" />
                 </div>
@@ -114,7 +114,7 @@ export default function TuVanDauThauPage() {
                   </div>
                   <span className="text-xs font-bold text-brand-500 mb-1 block">Bước {step.no}</span>
                   <h3 className="font-bold text-gray-900 mb-2">{step.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{step.desc}</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             ))}
@@ -138,7 +138,7 @@ export default function TuVanDauThauPage() {
                 ))}
               </ul>
             </div>
-            <div className="bg-brand-50 rounded-2xl p-8 border border-brand-100">
+            <div className="bg-white rounded-2xl p-8 shadow-sm">
               <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-3">Phù hợp với</h3>
               <ul className="space-y-3">
                 {[
@@ -159,8 +159,12 @@ export default function TuVanDauThauPage() {
       </section>
 
       {/* LEAD FORM */}
-      <section className="bg-brand-600 py-14">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+      <section className="relative py-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="/hero-bg.avif" alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-brand-800/90" />
+        </div>
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
             <h2 className="text-xl sm:text-2xl font-bold text-white mb-3">Yêu Cầu Tư Vấn</h2>
             <p className="text-brand-200 text-sm">

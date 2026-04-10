@@ -14,20 +14,20 @@ export default async function TinTucPage() {
   return (
     <>
       {/* HEADER */}
-      <section className="bg-brand-50 border-b border-brand-100 py-12">
+      <section className="bg-gradient-to-br from-brand-900 to-brand-700 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <p className="text-brand-600 text-sm font-medium mb-2">Blog</p>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+          <p className="text-brand-300 text-sm font-medium mb-3">Blog</p>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4">
             Tin Tức & Sự Kiện
           </h1>
-          <p className="text-gray-600 max-w-2xl">
+          <p className="text-brand-100 text-base sm:text-lg max-w-2xl leading-relaxed">
             Cập nhật kiến thức đấu thầu, thay đổi pháp luật và hoạt động đào tạo mới nhất từ YDC Academy.
           </p>
         </div>
       </section>
 
       {/* POST LIST */}
-      <section className="py-12">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           {posts.length > 0 ? (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -35,7 +35,7 @@ export default async function TinTucPage() {
                 <Link
                   key={post.slug}
                   href={`/tin-tuc/${post.slug}`}
-                  className="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md transition-shadow"
+                  className="group bg-white shadow-sm rounded-2xl overflow-hidden hover:shadow-lg transition-shadow"
                 >
                   {post.thumbnail && (
                     <div className="aspect-video bg-gray-100 overflow-hidden">

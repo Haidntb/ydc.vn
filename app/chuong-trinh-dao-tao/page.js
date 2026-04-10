@@ -15,7 +15,7 @@ export default async function ChuongTrinhDaoTaoPage() {
   return (
     <>
       {/* HEADER */}
-      <section className="bg-gradient-to-br from-brand-900 to-brand-700 text-white py-14">
+      <section className="bg-gradient-to-br from-brand-900 to-brand-700 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <p className="text-brand-300 text-sm font-medium mb-3">Chương trình đào tạo</p>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4">
@@ -29,7 +29,7 @@ export default async function ChuongTrinhDaoTaoPage() {
       </section>
 
       {/* COURSE CARDS */}
-      <section className="py-12">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <h2 className="text-xl font-bold text-gray-900 mb-6">Lịch Khai Giảng</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -41,13 +41,13 @@ export default async function ChuongTrinhDaoTaoPage() {
       </section>
 
       {/* COURSE CONTENT */}
-      <section className="bg-gray-50 py-12">
+      <section className="bg-gray-50 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center">{courseIntro.heading}</h2>
           <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">{courseIntro.desc}</p>
           <div className="grid sm:grid-cols-2 gap-5">
             {courseSubjects.map((subject) => (
-              <div key={subject.id} className="bg-white rounded-2xl p-6 border border-gray-100">
+              <div key={subject.id} className="bg-white rounded-2xl p-6 shadow-sm">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3">{subject.title}</h3>
                 <ul className="space-y-2">
                   {subject.bullets.map((b) => (
@@ -64,8 +64,12 @@ export default async function ChuongTrinhDaoTaoPage() {
       </section>
 
       {/* LEAD FORM */}
-      <section id="dang-ky" className="bg-brand-600 py-14">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+      <section id="dang-ky" className="relative py-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="/hero-bg.avif" alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-brand-800/90" />
+        </div>
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
             <h2 className="text-xl sm:text-2xl font-bold text-white mb-3">Đăng Ký Khóa Học</h2>
             <p className="text-brand-200 text-sm">

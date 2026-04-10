@@ -48,7 +48,7 @@ export default async function PostPage({ params }) {
       </div>
 
       {/* ARTICLE */}
-      <article className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
+      <article className="max-w-3xl mx-auto px-4 sm:px-6 py-12">
         {post.date && (
           <p className="text-sm text-gray-400 flex items-center gap-1.5 mb-4">
             <Icon name="calendar_month" size={14} />
@@ -79,7 +79,7 @@ export default async function PostPage({ params }) {
 
       {/* RELATED POSTS */}
       {otherPosts.length > 0 && (
-        <section className="bg-gray-50 py-12">
+        <section className="bg-gray-50 py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-6">Bài Viết Khác</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -87,7 +87,7 @@ export default async function PostPage({ params }) {
                 <Link
                   key={p.slug}
                   href={`/tin-tuc/${p.slug}`}
-                  className="bg-white border border-gray-200 rounded-xl p-5 hover:shadow-md transition-shadow"
+                  className="bg-white shadow-sm rounded-2xl p-5 hover:shadow-lg transition-shadow"
                 >
                   <p className="text-xs text-gray-400 mb-1">{p.date}</p>
                   <h3 className="font-bold text-gray-900 mb-1 hover:text-brand-600 transition-colors leading-snug">

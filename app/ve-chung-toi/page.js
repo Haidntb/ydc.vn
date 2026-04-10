@@ -51,8 +51,8 @@ export default function VeChungToiPage() {
   return (
     <>
       {/* IDENTITY COVER */}
-      <section className="bg-brand-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+      <section className="bg-gradient-to-br from-brand-900 to-brand-700 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-8">
             {/* Left: identity */}
             <div>
@@ -80,7 +80,7 @@ export default function VeChungToiPage() {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 space-y-14">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 space-y-14">
 
         {/* SỨ MỆNH */}
         <section>
@@ -195,7 +195,7 @@ export default function VeChungToiPage() {
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {team.map((member) => (
-              <div key={member.id} className="border border-gray-200 rounded-xl overflow-hidden">
+              <div key={member.id} className="shadow-sm rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="bg-brand-800 px-5 py-4 flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center overflow-hidden">
                     <Icon name="person" size={20} className="text-white" />
@@ -225,7 +225,7 @@ export default function VeChungToiPage() {
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {clientCategories.map((cat) => (
-              <div key={cat.label} className="border border-gray-200 rounded-xl overflow-hidden">
+              <div key={cat.label} className="shadow-sm rounded-2xl overflow-hidden">
                 <div className="bg-brand-800 px-4 py-2.5">
                   <p className="text-white text-xs font-bold uppercase tracking-wide">{cat.label}</p>
                 </div>
@@ -245,7 +245,7 @@ export default function VeChungToiPage() {
       </div>
 
       {/* CONTACT CTA */}
-      <section className="bg-brand-900 text-white py-12">
+      <section className="bg-gradient-to-br from-brand-900 to-brand-700 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>

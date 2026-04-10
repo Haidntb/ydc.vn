@@ -11,18 +11,19 @@ export default function LienHePage() {
   return (
     <>
       {/* HEADER */}
-      <section className="bg-brand-50 border-b border-brand-100 py-12">
+      <section className="bg-gradient-to-br from-brand-900 to-brand-700 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+          <p className="text-brand-300 text-sm font-medium mb-3">Liên hệ</p>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4">
             Liên Hệ Với YDC Academy
           </h1>
-          <p className="text-gray-500">
+          <p className="text-brand-100 text-base sm:text-lg max-w-2xl leading-relaxed">
             Sẵn sàng tư vấn và hỗ trợ bạn. Phản hồi trong 24 giờ làm việc.
           </p>
         </div>
       </section>
 
-      <section className="py-14">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Info */}

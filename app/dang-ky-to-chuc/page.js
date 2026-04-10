@@ -89,7 +89,7 @@ export default function DangKyToChucPage() {
                 ))}
               </ul>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-brand-100">
+            <div className="bg-white rounded-2xl p-8 shadow-sm">
               <h3 className="text-base font-bold text-gray-900 mb-4">Phù hợp với</h3>
               <ul className="space-y-3">
                 {targets.map((item) => (
@@ -105,11 +105,15 @@ export default function DangKyToChucPage() {
       </section>
 
       {/* LEAD FORM */}
-      <section className="py-14">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+      <section className="relative py-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="/hero-bg.avif" alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-brand-800/90" />
+        </div>
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">Đăng Ký Chương Trình Đào Tạo</h2>
-            <p className="text-gray-500 text-sm">
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-3">Đăng Ký Chương Trình Đào Tạo</h2>
+            <p className="text-brand-200 text-sm">
               Để lại thông tin — cán bộ tuyển sinh YDC Academy sẽ liên hệ trong 24 giờ để trao đổi về chương trình phù hợp với tổ chức của bạn.
             </p>
           </div>
