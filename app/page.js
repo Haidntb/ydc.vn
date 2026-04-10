@@ -286,7 +286,7 @@ export default async function Home() {
       </section>
 
       {/* COURSE SCHEDULE */}
-      <section id="lich-khai-giang" className="bg-brand-50 py-16">
+      <section id="lich-khai-giang" className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
