@@ -37,8 +37,10 @@ function LeadFormInner({ variant = 'default', title, subtitle, courses: coursesP
       if (formData.course)  body.append(f.course,  formData.course)
       if (formData.orgSize) body.append(f.orgSize, formData.orgSize)
       if (formData.message) body.append(f.message, formData.message)
-      body.append(f.variant, variant)
-      body.append(f.registrationType, registrationType)
+      const variantLabels = { course: 'Đăng ký khóa học', inhouse: 'Đào tạo nội bộ', default: 'Liên hệ tư vấn' }
+      const regLabels = { individual: 'Cá nhân', org: 'Cho tổ chức' }
+      body.append(f.variant, variantLabels[variant] || variant)
+      body.append(f.registrationType, regLabels[registrationType] || registrationType)
 
       await fetch(GOOGLE_FORM.action, {
         method: 'POST',
