@@ -3,6 +3,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import Icon from '@/components/Icon'
 
+const DOT_COUNT = 4
+
 export default function TestimonialCarousel({ testimonials }) {
   const [current, setCurrent] = useState(0)
   const timerRef = useRef(null)
@@ -13,7 +15,7 @@ export default function TestimonialCarousel({ testimonials }) {
 
   const startTimer = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current)
-    timerRef.current = setInterval(next, 5000)
+    timerRef.current = setInterval(next, 4000)
   }, [next])
 
   useEffect(() => {
@@ -26,6 +28,9 @@ export default function TestimonialCarousel({ testimonials }) {
     item: testimonials[(current + offset) % total],
     idx: (current + offset) % total,
   }))
+
+  // Dots: only show DOT_COUNT, map current position to dot index
+  const activeDot = current % DOT_COUNT
 
   return (
     <div
@@ -62,18 +67,16 @@ export default function TestimonialCarousel({ testimonials }) {
           <Icon name="chevron_left" size={22} className="text-gray-500" />
         </button>
 
-        {/* Dots */}
-        <div className="flex items-center gap-1.5">
-          {testimonials.map((_, i) => (
-            <button
+        {/* Dots — only 4, loops */}
+        <div className="flex items-center gap-2">
+          {Array.from({ length: DOT_COUNT }).map((_, i) => (
+            <span
               key={i}
-              onClick={() => { setCurrent(i); startTimer() }}
               className={`rounded-full transition-all ${
-                i === current
-                  ? 'w-6 h-2 bg-brand-600'
-                  : 'w-2 h-2 bg-gray-300 hover:bg-gray-400'
+                i === activeDot
+                  ? 'w-6 h-2.5 bg-brand-600'
+                  : 'w-2.5 h-2.5 bg-gray-300'
               }`}
-              aria-label={`Đến ${i + 1}`}
             />
           ))}
         </div>
@@ -86,10 +89,6 @@ export default function TestimonialCarousel({ testimonials }) {
           <Icon name="chevron_right" size={22} className="text-gray-500" />
         </button>
       </div>
-
-      <p className="text-center text-sm text-gray-400 mt-2">
-        {current + 1} / {total}
-      </p>
     </div>
   )
 }
