@@ -2,9 +2,9 @@ import LeadForm from '@/components/LeadForm'
 import Icon from '@/components/Icon'
 
 export const metadata = {
-  title: 'Đăng Ký Cho Tổ Chức — YDC Academy',
+  title: 'Đào Tạo Nội Bộ',
   description:
-    'Đăng ký chương trình đào tạo đấu thầu dành riêng cho tổ chức. YDC Academy thiết kế riêng, triển khai tại đơn vị. Linh hoạt quy mô 10–200+ người.',
+    'YDC Academy thiết kế chương trình đào tạo đấu thầu riêng cho tổ chức, triển khai tại đơn vị bạn. Linh hoạt quy mô 10–200+ người.',
 }
 
 const steps = [
@@ -31,7 +31,7 @@ const targets = [
   'Doanh nghiệp tư nhân quy mô lớn',
 ]
 
-export default function DangKyToChucPage() {
+export default function DaoTaoNoiBoPage() {
   return (
     <>
       {/* HERO */}

@@ -167,7 +167,7 @@ export default async function Home() {
     <>
       {/* HERO */}
       <section className="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 text-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
           <div className="max-w-3xl">
             <span className="inline-block bg-white/10 text-brand-100 text-sm font-medium px-3 py-1 rounded-full mb-6">
               Trung Tâm Đào Tạo và Bồi Dưỡng Nghiệp Vụ Đấu Thầu
@@ -201,7 +201,7 @@ export default async function Home() {
 
       {/* STATS */}
       <section className="bg-brand-600 text-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {stats.map((s) => (
               <div key={s.label}>
@@ -215,7 +215,7 @@ export default async function Home() {
 
       {/* PARTNER TICKER */}
       <section className="bg-gray-50 py-10">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider text-center mb-6">
             Hơn 100 tổ chức và doanh nghiệp đã tham gia chương trình đào tạo
           </p>
@@ -225,7 +225,7 @@ export default async function Home() {
 
       {/* AUDIENCE + BENEFITS — asymmetric 2-col */}
       <section className="py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             {/* LEFT: Dành cho ai */}
@@ -300,7 +300,7 @@ export default async function Home() {
 
       {/* CURRICULUM */}
       <section className="py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <p className="text-brand-600 text-sm font-semibold uppercase tracking-wider mb-2">Nội dung chương trình</p>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
@@ -345,7 +345,7 @@ export default async function Home() {
 
       {/* TESTIMONIALS */}
       <section className="bg-gray-50 py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
               Học Viên Đánh Giá Về YDC Academy

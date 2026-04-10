@@ -52,7 +52,7 @@ export default function VeChungToiPage() {
     <>
       {/* IDENTITY COVER */}
       <section className="bg-brand-900 text-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-8">
             {/* Left: identity */}
             <div>
@@ -80,7 +80,7 @@ export default function VeChungToiPage() {
         </div>
       </section>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 space-y-14">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 space-y-14">
 
         {/* SỨ MỆNH */}
         <section>
@@ -250,7 +250,7 @@ export default function VeChungToiPage() {
 
       {/* CONTACT CTA */}
       <section className="bg-brand-900 text-white py-12">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-brand-400 text-xs font-bold uppercase tracking-widest mb-3">Liên hệ hợp tác</p>

@@ -61,7 +61,7 @@ export default function TuVanDauThauPage() {
     <>
       {/* HERO */}
       <section className="bg-gradient-to-br from-brand-900 to-brand-700 text-white py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <p className="text-brand-300 text-sm font-medium mb-3">Dịch vụ tư vấn</p>
           <h1 className="text-3xl sm:text-4xl font-extrabold mb-5">
             Tư Vấn & Hỗ Trợ Đấu Thầu Chuyên Sâu
@@ -75,7 +75,7 @@ export default function TuVanDauThauPage() {
 
       {/* SERVICES */}
       <section className="py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <p className="text-brand-600 text-sm font-semibold uppercase tracking-wider mb-2">Dịch vụ</p>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
@@ -98,7 +98,7 @@ export default function TuVanDauThauPage() {
 
       {/* PROCESS */}
       <section className="bg-brand-50 py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-12 text-center">
             Quy Trình Tư Vấn
           </h2>
@@ -124,7 +124,7 @@ export default function TuVanDauThauPage() {
 
       {/* WHY YDC */}
       <section className="py-14">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-10 items-start">
             <div>
               <p className="text-brand-600 text-sm font-semibold uppercase tracking-wider mb-2">Vì sao chọn YDC</p>

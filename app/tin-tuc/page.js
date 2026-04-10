@@ -15,7 +15,7 @@ export default async function TinTucPage() {
     <>
       {/* HEADER */}
       <section className="bg-brand-50 border-b border-brand-100 py-12">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <p className="text-brand-600 text-sm font-medium mb-2">Blog</p>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
             Tin Tức & Sự Kiện
@@ -28,7 +28,7 @@ export default async function TinTucPage() {
 
       {/* POST LIST */}
       <section className="py-12">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           {posts.length > 0 ? (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {posts.map((post) => (

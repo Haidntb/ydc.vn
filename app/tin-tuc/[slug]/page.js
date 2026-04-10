@@ -80,7 +80,7 @@ export default async function PostPage({ params }) {
       {/* RELATED POSTS */}
       {otherPosts.length > 0 && (
         <section className="bg-gray-50 py-12">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <h2 className="text-xl font-bold text-gray-900 mb-6">Bài Viết Khác</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {otherPosts.map((p) => (
