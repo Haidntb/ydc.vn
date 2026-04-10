@@ -204,7 +204,7 @@ export default async function Home() {
       </section>
 
       {/* STATS */}
-      <section className="bg-brand-600 text-white">
+      <section className="bg-brand-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {stats.map((s, i) => (
