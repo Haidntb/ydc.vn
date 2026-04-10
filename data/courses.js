@@ -16,7 +16,7 @@ export const courses = [
   {
     id: 'k15-hcm-offline',
     batch: 'K15',
-    badge: 'Offline - Hồ Chí Minh',
+    badge: 'Offline - HCM',
     title: 'Bồi dưỡng Nghiệp vụ Đấu thầu - K15',
     location: 'Trường ĐH Kinh tế TP. HCM',
     format: 'offline',
