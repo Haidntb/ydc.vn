@@ -1,26 +1,83 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Brand Colors YDC Academy — xanh lá từ brand thật */
+  --color-brand-50: #f0f9f4;
+  --color-brand-100: #e6f7ed;
+  --color-brand-200: #c3e8d0;
+  --color-brand-500: #1e693d;
+  --color-brand-600: #326448;
+  --color-brand-700: #264734;
+  --color-brand-800: #1a3325;
+  --color-brand-900: #0c130f;
+
+  --color-accent: #89ab5b;
+  --color-accent-hover: #6f8f46;
+
+  /* Typography */
+  --font-sans: var(--font-manrope), system-ui, -apple-system, sans-serif;
+
+  /* Bump all text sizes for 40-50yo readability — 1.5x scale */
+  --text-xs: 0.9375rem;   /* 15px (was 12px) */
+  --text-sm: 1.0625rem;   /* 17px (was 14px) */
+
+  /* Headings — x2 scale */
+  --text-lg: 1.5rem;      /* 24px (was 18px) */
+  --text-xl: 1.75rem;     /* 28px (was 20px) */
+  --text-2xl: 2.25rem;    /* 36px (was 24px) */
+  --text-3xl: 2.75rem;    /* 44px (was 30px) */
+  --text-4xl: 3.5rem;     /* 56px (was 36px) */
+  --text-5xl: 4.5rem;     /* 72px (was 48px) */
+
+  /* Darken gray text — less faint on screen */
+  --color-gray-500: #4b5563;
+  --color-gray-400: #6b7280;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Material Symbols sizing */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 1.75;
+  color: #1a1a1a;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Logo ticker animation */
+@keyframes ticker {
+  to { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  animation: ticker 35s linear infinite;
+}
+
+/* Scroll reveal animation */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
