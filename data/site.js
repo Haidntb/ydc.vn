@@ -5,14 +5,14 @@ export const site = {
   tagline: 'Trung Tâm Đào Tạo và Hỗ Trợ Đấu Thầu',
   description:
     'Nâng cao năng lực đấu thầu cho cán bộ, doanh nghiệp và tổ chức trên toàn quốc.',
-  phone: '← cập nhật số điện thoại thật', // ← chưa tìm được, cần Hirosi bổ sung
-  email: '← cập nhật email thật',          // ← chưa tìm được, cần Hirosi bổ sung
+  phone: '0946.891.792',
+  email: 'ydc.ltd2023@gmail.com',
   address: 'Tầng 6, Tòa Nhà Việt Á, Số 9 Duy Tân, Cầu Giấy, Hà Nội',
   workingHours: 'Thứ 2 – Thứ 6, 8:00 – 17:30',
   director: 'Nguyễn Hải Yến',
   social: {
-    facebook: 'https://www.facebook.com/hesinhthaidauthau', // ← cần xác nhận đây có phải page chính thức không
+    facebook: 'https://www.facebook.com/hesinhthaidauthau',
     youtube: '',
-    zalo: '',
+    zalo: 'https://zalo.me/0384757091',
   },
 }

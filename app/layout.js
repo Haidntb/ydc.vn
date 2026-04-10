@@ -2,6 +2,7 @@ import { Manrope } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import FloatingButtons from '@/components/FloatingButtons'
 
 const manrope = Manrope({
   variable: '--font-manrope',
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
+        <FloatingButtons />
       </body>
     </html>
   )
