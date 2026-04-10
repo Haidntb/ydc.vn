@@ -218,10 +218,10 @@ export default async function Home() {
       </section>
 
       {/* PARTNER TICKER */}
-      <section className="bg-gray-50 py-10">
+      <section className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider text-center mb-6">
-            Hơn 100 tổ chức và doanh nghiệp đã tham gia chương trình đào tạo
+          <p className="text-center text-gray-500 text-sm mb-8">
+            Được tin chọn bởi hơn <strong className="text-gray-900">100 + tổ chức & doanh nghiệp</strong> trên toàn quốc
           </p>
           <LogoTicker clients={allClients} />
         </div>
