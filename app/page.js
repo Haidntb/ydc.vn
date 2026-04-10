@@ -296,7 +296,7 @@ export default async function Home() {
           <FadeIn>
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-              Lịch Khai Giảng Khóa K15
+              Lịch Khai Giảng
             </h2>
             <p className="text-gray-600">
               Khai giảng ngày 12/08/2025 — Offline tại Hà Nội & TP.HCM hoặc Trực tuyến qua Zoom.
