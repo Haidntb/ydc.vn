@@ -13,13 +13,13 @@ export default function CourseCard({ course, registerPath = '/' }) {
 
       {/* Badge + status */}
       <div className="flex items-center justify-between gap-2">
-        <span className={`text-xs font-semibold px-3 py-1 rounded-full ${
+        <span className={`text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap ${
           isOnline ? 'bg-sky-100 text-sky-700' : 'bg-green-100 text-green-700'
         }`}>
           {course.badge}
         </span>
         {isOpen && course.slots ? (
-          <span className="text-xs font-semibold text-amber-600">
+          <span className="text-sm font-semibold text-amber-600">
             Còn {course.slots} slot
           </span>
         ) : !isOpen ? (
@@ -34,7 +34,7 @@ export default function CourseCard({ course, registerPath = '/' }) {
       <h3 className="font-bold text-gray-900 text-lg leading-snug">{course.title}</h3>
 
       {/* Date + location với icon */}
-      <ul className="space-y-1.5 text-sm text-gray-600">
+      <ul className="space-y-1.5 text-sm text-gray-700">
         <li className="flex items-center gap-2">
           <Icon name="calendar_month" size={14} className="text-gray-400 flex-shrink-0" />
           <span>Khai giảng: <strong className="text-gray-900">{course.startDate}</strong> · {course.duration}</span>
@@ -47,7 +47,7 @@ export default function CourseCard({ course, registerPath = '/' }) {
 
       {/* Price */}
       <div className="flex items-baseline justify-between gap-2">
-        <p className="text-xs font-medium text-gray-400">Học phí:</p>
+        <p className="text-sm font-medium text-gray-500">Học phí:</p>
         <p className="text-2xl font-extrabold text-brand-700 leading-none">{course.tuition}</p>
       </div>
 

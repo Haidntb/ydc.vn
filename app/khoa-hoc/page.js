@@ -51,7 +51,7 @@ export default async function KhoaHocPage() {
                 <h3 className="font-bold text-gray-900 mb-3">{subject.title}</h3>
                 <ul className="space-y-2">
                   {subject.bullets.map((b) => (
-                    <li key={b} className="flex items-start gap-2 text-sm text-gray-600">
+                    <li key={b} className="flex items-start gap-2 text-sm text-gray-700">
                       <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-brand-600 flex-shrink-0" />
                       {b}
                     </li>
