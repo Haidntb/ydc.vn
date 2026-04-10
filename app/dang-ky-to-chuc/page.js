@@ -51,23 +51,21 @@ export default function DangKyToChucPage() {
       {/* PROCESS */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-14 text-center">
             Quy Trình Triển Khai
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-0">
             {steps.map((step, idx) => (
-              <div key={step.no} className="relative">
+              <div key={step.no} className="relative flex flex-col items-center text-center px-6">
                 {idx < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-7 left-full w-full h-0.5 bg-brand-100 z-0" />
+                  <div className="hidden lg:block absolute top-8 left-[calc(50%+32px)] right-[calc(-50%+32px)] h-[2px] bg-brand-200 z-0" />
                 )}
-                <div className="relative z-10">
-                  <div className="w-14 h-14 rounded-2xl bg-brand-600 text-white flex items-center justify-center mb-4">
-                    <Icon name={step.icon} size={26} className="text-white" />
-                  </div>
-                  <span className="text-xs font-bold text-brand-500 mb-1 block">Bước {step.no}</span>
-                  <h3 className="font-bold text-gray-900 mb-2">{step.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{step.desc}</p>
+                <div className="relative z-10 w-16 h-16 rounded-full bg-brand-600 text-white flex items-center justify-center mb-5 shadow-md">
+                  <Icon name={step.icon} size={28} className="text-white" />
                 </div>
+                <span className="text-xs font-bold text-brand-500 mb-1">Bước {step.no}</span>
+                <h3 className="font-bold text-gray-900 text-sm mb-2">{step.title}</h3>
+                <p className="text-gray-500 text-xs leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
