@@ -176,10 +176,10 @@ export default async function Home() {
             <span className="inline-block bg-white/10 text-brand-100 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
               Trung Tâm Đào Tạo và Bồi Dưỡng Nghiệp Vụ Đấu Thầu
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight mb-6">
               Nâng Cao Năng Lực Đấu Thầu Cùng Chuyên Gia
             </h1>
-            <p className="text-brand-100 text-lg sm:text-xl leading-relaxed mb-8 max-w-2xl">
+            <p className="text-brand-100 text-base sm:text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
               Chương trình bồi dưỡng nghiệp vụ đấu thầu do chuyên gia Cục Đấu thầu —
               Bộ Kế hoạch và Đầu tư trực tiếp giảng dạy. Hơn{' '}
               <strong className="text-white">1.000 học viên</strong> từ 100 tổ chức trên cả nước đã tham dự.
@@ -209,7 +209,7 @@ export default async function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {stats.map((s, i) => (
               <div key={s.label}>
-                <p className="text-3xl font-extrabold"><CountUp value={s.value} delay={i * 150} /></p>
+                <p className="text-2xl sm:text-3xl font-extrabold"><CountUp value={s.value} delay={i * 150} /></p>
                 <p className="text-brand-100 text-sm mt-1">{s.label}</p>
               </div>
             ))}

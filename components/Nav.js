@@ -105,7 +105,7 @@ export default function Nav() {
               Liên Hệ
             </Link>
             <button
-              className="md:hidden p-2 rounded-md text-gray-600 hover:text-brand-600 hover:bg-brand-50"
+              className="lg:hidden p-2 rounded-md text-gray-600 hover:text-brand-600 hover:bg-brand-50"
               onClick={() => setOpen(!open)}
               aria-label="Mở menu"
             >
@@ -116,7 +116,7 @@ export default function Nav() {
 
         {/* Mobile menu */}
         {open && (
-          <div className="md:hidden pb-4 border-t border-gray-100 pt-2">
+          <div className="lg:hidden pb-4 border-t border-gray-100 pt-2">
             <nav className="flex flex-col gap-1">
               {navLinks.map((link) =>
                 link.external ? (

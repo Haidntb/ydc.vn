@@ -70,8 +70,8 @@ export default function VeChungToiPage() {
                 { v: '100+', l: 'Tổ chức' },
                 { v: '5+', l: 'Năm' },
               ].map((m) => (
-                <div key={m.l} className="px-7 py-5 text-center">
-                  <p className="text-2xl font-extrabold text-white">{m.v}</p>
+                <div key={m.l} className="px-4 sm:px-7 py-4 sm:py-5 text-center">
+                  <p className="text-xl sm:text-2xl font-extrabold text-white">{m.v}</p>
                   <p className="text-brand-400 text-xs mt-0.5">{m.l}</p>
                 </div>
               ))}
@@ -147,11 +147,11 @@ export default function VeChungToiPage() {
           </h2>
           <div className="rounded-xl overflow-hidden border border-gray-200">
             {orgInfo.map((row) => (
-              <div key={row.label} className="grid grid-cols-5 border-b border-gray-100 last:border-0">
-                <div className="col-span-2 bg-gray-50 px-5 py-3.5 border-r border-gray-100">
+              <div key={row.label} className="grid grid-cols-1 sm:grid-cols-5 border-b border-gray-100 last:border-0">
+                <div className="sm:col-span-2 bg-gray-50 px-5 py-2 sm:py-3.5 sm:border-r border-gray-100">
                   <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">{row.label}</p>
                 </div>
-                <div className="col-span-3 bg-white px-5 py-3.5">
+                <div className="sm:col-span-3 bg-white px-5 py-2 sm:py-3.5">
                   <p className="text-gray-900 text-sm">{row.value}</p>
                 </div>
               </div>
@@ -167,24 +167,20 @@ export default function VeChungToiPage() {
           </h2>
           <div className="rounded-xl overflow-hidden border border-gray-200">
             {credentials.map((c, i) => (
-              <div key={c.no} className={`grid grid-cols-12 border-b border-gray-100 last:border-0 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
-                <div className="col-span-1 flex items-center justify-center border-r border-gray-100 py-4">
-                  <span className="text-xs font-bold text-brand-600">{c.no}</span>
-                </div>
-                <div className="col-span-5 px-5 py-4 border-r border-gray-100">
-                  <p className="text-xs text-gray-400 uppercase tracking-wide mb-1">Chứng nhận</p>
-                  <p className="font-semibold text-gray-900 text-sm">{c.title}</p>
-                </div>
-                <div className="col-span-4 px-5 py-4 border-r border-gray-100">
-                  <p className="text-xs text-gray-400 uppercase tracking-wide mb-1">Cơ quan</p>
-                  <p className="text-gray-700 text-sm">{c.issuer}</p>
-                </div>
-                <div className="col-span-2 px-4 py-4 flex flex-col justify-center">
-                  <span className="inline-flex items-center gap-1 text-xs font-semibold text-green-700 bg-green-50 px-2 py-1 rounded-full w-fit">
-                    <Icon name="check_circle" size={14} />
-                    {c.status}
-                  </span>
-                  {c.note && <p className="text-gray-400 text-xs mt-1 italic">{c.note}</p>}
+              <div key={c.no} className={`border-b border-gray-100 last:border-0 p-5 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
+                <div className="flex items-start gap-3">
+                  <span className="text-xs font-bold text-brand-600 mt-1">{c.no}</span>
+                  <div className="flex-1">
+                    <p className="font-semibold text-gray-900 text-sm">{c.title}</p>
+                    <p className="text-gray-600 text-xs mt-1">{c.issuer}</p>
+                    <div className="flex items-center gap-2 mt-2 flex-wrap">
+                      <span className="inline-flex items-center gap-1 text-xs font-semibold text-green-700 bg-green-50 px-3 py-1 rounded-full">
+                        <Icon name="check_circle" size={14} />
+                        {c.status}
+                      </span>
+                      {c.note && <span className="text-gray-400 text-xs italic">{c.note}</span>}
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}

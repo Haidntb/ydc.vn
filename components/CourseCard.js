@@ -29,7 +29,7 @@ export default function CourseCard({ course, registerPath = '/' }) {
       </div>
 
       {/* Title */}
-      <h3 className="font-bold text-gray-900 text-lg leading-snug">{course.title}</h3>
+      <h3 className="font-bold text-gray-900 text-base sm:text-lg leading-snug">{course.title}</h3>
 
       {/* Date + location */}
       <ul className="space-y-1.5 text-xs text-gray-600">
@@ -46,7 +46,7 @@ export default function CourseCard({ course, registerPath = '/' }) {
       {/* Price */}
       <div className="flex items-baseline justify-between gap-2 mt-auto pt-2">
         <p className="text-xs font-medium text-gray-400">Học phí:</p>
-        <p className="text-lg font-extrabold text-brand-700 leading-none">{course.tuition}</p>
+        <p className="text-base sm:text-lg font-extrabold text-brand-700 leading-none">{course.tuition}</p>
       </div>
 
       {/* CTA */}

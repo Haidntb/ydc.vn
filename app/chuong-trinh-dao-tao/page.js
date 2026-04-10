@@ -18,7 +18,7 @@ export default async function ChuongTrinhDaoTaoPage() {
       <section className="bg-gradient-to-br from-brand-900 to-brand-700 text-white py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <p className="text-brand-300 text-sm font-medium mb-3">Chương trình đào tạo</p>
-          <h1 className="text-3xl sm:text-4xl font-extrabold mb-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4">
             Các Khóa Bồi Dưỡng Nghiệp Vụ Đấu Thầu
           </h1>
           <p className="text-brand-100 text-lg max-w-2xl leading-relaxed">
