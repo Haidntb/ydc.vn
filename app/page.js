@@ -227,22 +227,22 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* AUDIENCE + BENEFITS — asymmetric 2-col */}
-      <section className="py-20">
+      {/* AUDIENCE + BENEFITS — 2-col, both in cards */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-start">
+          <div className="grid md:grid-cols-2 gap-8 items-stretch">
 
             {/* LEFT: Dành cho ai */}
-            <div>
+            <div className="bg-white rounded-3xl p-8 sm:p-10 border border-gray-200 flex flex-col">
               <p className="text-brand-600 text-sm font-semibold uppercase tracking-wider mb-3">Đối tượng tham gia</p>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 leading-snug">
                 Chương Trình Phù Hợp Với Ai?
               </h2>
-              <div className="space-y-7">
-                {audiences.map((item) => (
-                  <div key={item.title} className="flex items-start gap-4">
+              <div className="space-y-7 flex-1">
+                {audiences.map((item, i) => (
+                  <div key={item.title} className="flex items-start gap-4 fade-in-up-stagger" style={{ animationDelay: `${i * 100}ms` }}>
                     <div className="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Icon name={item.icon} size={22} className="text-brand-600" />
+                      <Icon name={item.icon} size={24} className="text-brand-600" />
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">{item.title}</h3>
@@ -253,26 +253,28 @@ export default async function Home() {
               </div>
               <a
                 href="#dang-ky"
-                className="inline-flex items-center gap-2 mt-10 px-6 py-3.5 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700 transition-colors"
+                className="inline-flex items-center gap-2 mt-10 px-6 py-3.5 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700 transition-colors w-fit"
               >
                 Ghi danh khóa học
                 <Icon name="arrow_forward" size={18} />
               </a>
             </div>
 
-            {/* RIGHT: Bạn nhận được gì */}
-            <div className="bg-brand-50 rounded-3xl p-8 border border-brand-100">
-              <p className="text-brand-600 text-sm font-semibold uppercase tracking-wider mb-3">Quyền lợi học viên</p>
-              <h2 className="text-2xl font-bold text-gray-900 mb-8 leading-snug">
+            {/* RIGHT: Bạn nhận được gì — accent card */}
+            <div className="bg-brand-900 rounded-3xl p-8 sm:p-10 text-white flex flex-col">
+              <p className="text-brand-400 text-sm font-semibold uppercase tracking-wider mb-3">Quyền lợi học viên</p>
+              <h2 className="text-2xl font-bold text-white mb-8 leading-snug">
                 Bạn Nhận Được Gì Sau Khóa Học?
               </h2>
-              <div className="space-y-5">
-                {benefits.map((b) => (
-                  <div key={b.title} className="flex items-start gap-3">
-                    <Icon name="check_circle" size={22} className="text-brand-600 flex-shrink-0 mt-0.5" />
+              <div className="space-y-6 flex-1">
+                {benefits.map((b, i) => (
+                  <div key={b.title} className="flex items-start gap-4 fade-in-up-stagger" style={{ animationDelay: `${i * 120}ms` }}>
+                    <div className="w-10 h-10 rounded-lg bg-brand-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <Icon name="check" size={20} className="text-brand-200" />
+                    </div>
                     <div>
-                      <p className="font-semibold text-gray-900">{b.title}</p>
-                      <p className="text-gray-600 text-sm leading-relaxed mt-0.5">{b.desc}</p>
+                      <p className="font-bold text-white">{b.title}</p>
+                      <p className="text-brand-200 text-sm leading-relaxed mt-1">{b.desc}</p>
                     </div>
                   </div>
                 ))}
