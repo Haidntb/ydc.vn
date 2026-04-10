@@ -228,12 +228,12 @@ export default async function Home() {
       </section>
 
       {/* AUDIENCE + BENEFITS — 2-col, both in cards */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-8 items-stretch">
 
-            {/* LEFT: Dành cho ai */}
-            <div className="bg-white rounded-3xl p-8 sm:p-10 border border-gray-200 flex flex-col">
+            {/* LEFT: Dành cho ai — no border, plain */}
+            <div className="rounded-3xl p-8 sm:p-10 flex flex-col">
               <p className="text-brand-600 text-sm font-semibold uppercase tracking-wider mb-3">Đối tượng tham gia</p>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 leading-snug">
                 Chương Trình Phù Hợp Với Ai?
@@ -261,20 +261,20 @@ export default async function Home() {
             </div>
 
             {/* RIGHT: Bạn nhận được gì — accent card */}
-            <div className="bg-brand-900 rounded-3xl p-8 sm:p-10 text-white flex flex-col">
-              <p className="text-brand-400 text-sm font-semibold uppercase tracking-wider mb-3">Quyền lợi học viên</p>
-              <h2 className="text-2xl font-bold text-white mb-8 leading-snug">
+            <div className="bg-brand-50 rounded-3xl p-8 sm:p-10 border border-brand-100 flex flex-col">
+              <p className="text-brand-600 text-sm font-semibold uppercase tracking-wider mb-3">Quyền lợi học viên</p>
+              <h2 className="text-2xl font-bold text-gray-900 mb-8 leading-snug">
                 Bạn Nhận Được Gì Sau Khóa Học?
               </h2>
               <div className="space-y-6 flex-1">
                 {benefits.map((b, i) => (
                   <div key={b.title} className="flex items-start gap-4 fade-in-up-stagger" style={{ animationDelay: `${i * 120}ms` }}>
-                    <div className="w-10 h-10 rounded-lg bg-brand-700 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Icon name="check" size={20} className="text-brand-200" />
+                    <div className="w-10 h-10 rounded-lg bg-brand-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <Icon name="check" size={20} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-bold text-white">{b.title}</p>
-                      <p className="text-brand-200 text-sm leading-relaxed mt-1">{b.desc}</p>
+                      <p className="font-bold text-gray-900">{b.title}</p>
+                      <p className="text-gray-600 text-sm leading-relaxed mt-1">{b.desc}</p>
                     </div>
                   </div>
                 ))}
