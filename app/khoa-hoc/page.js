@@ -48,7 +48,7 @@ export default async function KhoaHocPage() {
           <div className="space-y-4">
             {courseSubjects.map((subject) => (
               <div key={subject.id} className="bg-white rounded-xl p-6 border border-gray-100">
-                <h3 className="font-bold text-gray-900 mb-3">{subject.title}</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{subject.title}</h3>
                 <ul className="space-y-2">
                   {subject.bullets.map((b) => (
                     <li key={b} className="flex items-start gap-2 text-sm text-gray-700">

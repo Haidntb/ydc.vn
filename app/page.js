@@ -312,21 +312,16 @@ export default async function Home() {
           </div>
           <div className="grid sm:grid-cols-2 gap-5 max-w-4xl mx-auto">
             {courseSubjects.map((subject) => (
-              <div key={subject.id} className="flex items-start gap-4 bg-brand-50 rounded-2xl p-6 border border-brand-100">
-                <span className="flex-shrink-0 w-9 h-9 rounded-xl bg-brand-600 text-white text-sm font-bold flex items-center justify-center">
-                  {subject.id}
-                </span>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-2">{subject.title}</h3>
-                  <ul className="space-y-1.5">
-                    {subject.bullets.map((b) => (
-                      <li key={b} className="flex items-start gap-2 text-sm text-gray-700">
-                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0" />
-                        {b}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              <div key={subject.id} className="bg-brand-50 rounded-2xl p-6 border border-brand-100">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{subject.title}</h3>
+                <ul className="space-y-1.5">
+                  {subject.bullets.map((b) => (
+                    <li key={b} className="flex items-start gap-2 text-sm text-gray-700">
+                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0" />
+                      {b}
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
