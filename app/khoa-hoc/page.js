@@ -31,7 +31,7 @@ export default async function KhoaHocPage() {
       <section className="py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-xl font-bold text-gray-900 mb-6">Lịch Học Khóa K15</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {courses.map((course) => (
               <CourseCard key={course.id} course={course} registerPath="/khoa-hoc" />
             ))}

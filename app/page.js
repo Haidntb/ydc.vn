@@ -281,7 +281,7 @@ export default async function Home() {
 
       {/* COURSE SCHEDULE */}
       <section id="lich-khai-giang" className="bg-brand-50 py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
               Lịch Khai Giảng Khóa K15
@@ -290,7 +290,7 @@ export default async function Home() {
               Khai giảng ngày 12/08/2025 — Offline tại Hà Nội & TP.HCM hoặc Trực tuyến qua Zoom.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {courses.map((course) => (
               <CourseCard key={course.id} course={course} />
             ))}
