@@ -1,28 +1,20 @@
 /**
- * Google Forms Configuration
- *
- * Cách lấy entry IDs:
- * 1. Mở Google Form của bạn
- * 2. Click 3 chấm → "Get pre-filled link"
- * 3. Điền dữ liệu mẫu vào từng field → Submit
- * 4. URL hiện ra sẽ có dạng: ...?entry.123456789=value&entry.987654321=value
- * 5. Copy từng entry.XXXXXXXXX vào đây
+ * Google Forms Configuration — YDC Academy
+ * Form URL: https://docs.google.com/forms/d/e/1FAIpQLSeNtjSOU_1azxoyTqDNciVDWZHI2-DwaJiitXHT2C0_g9_YOA/viewform
  */
 
 export const GOOGLE_FORM = {
-  // Thay YOUR_FORM_ID bằng ID từ URL Google Form của bạn
-  // URL dạng: https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform
-  action: 'https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse',
+  action: 'https://docs.google.com/forms/d/e/1FAIpQLSeNtjSOU_1azxoyTqDNciVDWZHI2-DwaJiitXHT2C0_g9_YOA/formResponse',
 
   fields: {
-    name:     'entry.XXXXXXXXX', // Họ và tên
-    company:  'entry.XXXXXXXXX', // Tên công ty / Đơn vị
-    phone:    'entry.XXXXXXXXX', // Số điện thoại
-    email:    'entry.XXXXXXXXX', // Email
-    course:   'entry.XXXXXXXXX', // Lớp học (variant=course)
-    orgSize:  'entry.XXXXXXXXX', // Quy mô tổ chức (variant=inhouse)
-    message:  'entry.XXXXXXXXX', // Nội dung / Yêu cầu
-    variant:  'entry.XXXXXXXXX', // Loại form (default/course/inhouse)
-    registrationType: 'entry.XXXXXXXXX', // Cá nhân / Tổ chức
+    name:             'entry.544002807',    // Họ và tên
+    company:          'entry.1117565283',   // Tên công ty / Đơn vị
+    phone:            'entry.1042633920',   // Số điện thoại
+    email:            'entry.902761343',    // Email
+    course:           'entry.1781688720',   // Khóa học
+    orgSize:          'entry.1814276106',   // Quy mô tổ chức
+    message:          'entry.621591696',    // Yêu cầu / Ghi chú
+    variant:          'entry.1078320768',   // Loại form
+    registrationType: 'entry.370894965',    // Loại đăng ký
   },
 }
