@@ -5,6 +5,7 @@ import CourseCard from '@/components/CourseCard'
 import LogoTicker from '@/components/LogoTicker'
 import TestimonialCarousel from '@/components/TestimonialCarousel'
 import CountUp from '@/components/CountUp'
+import FadeIn from '@/components/FadeIn'
 import { clientCategories, stats } from '@/data/clients'
 import { courseSubjects, courseIntro } from '@/data/courses'
 import { fetchCourses } from '@/lib/fetchCourses'
@@ -233,6 +234,7 @@ export default async function Home() {
           <div className="grid md:grid-cols-2 gap-8 items-stretch">
 
             {/* LEFT: Dành cho ai — no border, plain */}
+            <FadeIn>
             <div className="rounded-3xl p-8 sm:p-10 flex flex-col">
               <p className="text-brand-600 text-sm font-semibold uppercase tracking-wider mb-3">Đối tượng tham gia</p>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 leading-snug">
@@ -259,9 +261,11 @@ export default async function Home() {
                 <Icon name="arrow_forward" size={18} />
               </a>
             </div>
+            </FadeIn>
 
             {/* RIGHT: Bạn nhận được gì — accent card */}
-            <div className="bg-brand-50 rounded-3xl p-8 sm:p-10 border border-brand-100 flex flex-col">
+            <FadeIn delay={200}>
+            <div className="bg-brand-50 rounded-3xl p-8 sm:p-10 border border-brand-100 flex flex-col h-full">
               <p className="text-brand-600 text-sm font-semibold uppercase tracking-wider mb-3">Quyền lợi học viên</p>
               <h2 className="text-2xl font-bold text-gray-900 mb-8 leading-snug">
                 Bạn Nhận Được Gì Sau Khóa Học?
@@ -280,6 +284,7 @@ export default async function Home() {
                 ))}
               </div>
             </div>
+            </FadeIn>
 
           </div>
         </div>
@@ -288,6 +293,7 @@ export default async function Home() {
       {/* COURSE SCHEDULE */}
       <section id="lich-khai-giang" className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <FadeIn>
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
               Lịch Khai Giảng Khóa K15
@@ -296,6 +302,7 @@ export default async function Home() {
               Khai giảng ngày 12/08/2025 — Offline tại Hà Nội & TP.HCM hoặc Trực tuyến qua Zoom.
             </p>
           </div>
+          </FadeIn>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {courses.map((course) => (
               <CourseCard key={course.id} course={course} />
@@ -307,6 +314,7 @@ export default async function Home() {
       {/* CURRICULUM */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <FadeIn>
           <div className="text-center mb-10">
             <p className="text-brand-600 text-sm font-semibold uppercase tracking-wider mb-2">Nội dung chương trình</p>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
@@ -316,6 +324,7 @@ export default async function Home() {
               Chương trình 2 ngày bao gồm 4 chuyên đề được xây dựng bám sát khung thi chứng chỉ hành nghề đấu thầu.
             </p>
           </div>
+          </FadeIn>
           <div className="grid sm:grid-cols-2 gap-5 max-w-4xl mx-auto">
             {courseSubjects.map((subject) => (
               <div key={subject.id} className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
@@ -356,6 +365,7 @@ export default async function Home() {
       {/* TESTIMONIALS */}
       <section className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <FadeIn>
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
               Học Viên Đánh Giá Về YDC Academy
@@ -364,6 +374,7 @@ export default async function Home() {
               Ý kiến từ cán bộ, chuyên viên các tổ chức đã tham gia chương trình đào tạo.
             </p>
           </div>
+          </FadeIn>
           <TestimonialCarousel testimonials={testimonials} />
         </div>
       </section>
@@ -371,11 +382,13 @@ export default async function Home() {
       {/* FAQ */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <FadeIn>
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
               Giải Đáp Thắc Mắc Thường Gặp
             </h2>
           </div>
+          </FadeIn>
           <div className="space-y-3">
             {faqs.map((faq, i) => (
               <details
