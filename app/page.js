@@ -337,8 +337,8 @@ export default async function Home() {
       {/* LEAD FORM — trên testimonials */}
       <section id="dang-ky" className="relative py-16 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/hero-bg.avif" alt="" className="w-full h-full object-cover brightness-50" />
-          <div className="absolute inset-0 bg-brand-900/80" />
+          <img src="/hero-bg.avif" alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-brand-900/60" />
         </div>
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
