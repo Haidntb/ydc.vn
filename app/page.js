@@ -318,7 +318,7 @@ export default async function Home() {
           </div>
           <div className="grid sm:grid-cols-2 gap-5 max-w-4xl mx-auto">
             {courseSubjects.map((subject) => (
-              <div key={subject.id} className="bg-brand-50 rounded-2xl p-6 border border-brand-100">
+              <div key={subject.id} className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{subject.title}</h3>
                 <ul className="space-y-1.5">
                   {subject.bullets.map((b) => (
