@@ -64,14 +64,14 @@ export default function Footer() {
             <span className="font-bold text-lg block mb-3">YDC Academy</span>
             <p className="text-brand-200 text-sm leading-relaxed">{site.tagline}</p>
             <p className="text-brand-300 text-sm mt-3 leading-relaxed">{site.description}</p>
-            {site.social.facebook && (
+            {site.social.zalo && (
               <a
-                href={site.social.facebook}
+                href={site.social.zalo}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 mt-5 text-sm text-brand-300 hover:text-white transition-colors"
               >
-                Facebook
+                Zalo
                 <Icon name="arrow_forward" size={16} />
               </a>
             )}

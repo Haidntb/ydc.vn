@@ -78,16 +78,16 @@ export default function LienHePage() {
                 </li>
               </ul>
 
-              {site.social.facebook && (
+              {site.social.zalo && (
                 <div className="mt-8">
-                  <p className="text-sm font-medium text-gray-900 mb-3">Mạng xã hội</p>
+                  <p className="text-sm font-medium text-gray-900 mb-3">Liên hệ nhanh</p>
                   <a
-                    href={site.social.facebook}
+                    href={site.social.zalo}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-sm text-brand-600 hover:underline"
                   >
-                    Facebook <Icon name="open_in_new" size={14} />
+                    Zalo <Icon name="open_in_new" size={14} />
                   </a>
                 </div>
               )}
