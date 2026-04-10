@@ -169,7 +169,6 @@ export default async function Home() {
       <section className="relative text-white overflow-hidden">
         <div className="absolute inset-0">
           <img src="/hero-bg.avif" alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-brand-900/75" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
           <div className="max-w-3xl">
