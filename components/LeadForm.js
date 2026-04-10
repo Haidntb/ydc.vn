@@ -27,7 +27,7 @@ function LeadFormInner({ variant = 'default', title, subtitle, courses: coursesP
     setStatus('loading')
 
     try {
-      const body = new FormData()
+      const body = new URLSearchParams()
       const f = GOOGLE_FORM.fields
 
       if (formData.name)    body.append(f.name,    formData.name)
@@ -43,7 +43,8 @@ function LeadFormInner({ variant = 'default', title, subtitle, courses: coursesP
       await fetch(GOOGLE_FORM.action, {
         method: 'POST',
         mode: 'no-cors',
-        body,
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body.toString(),
       })
 
       setStatus('success')
