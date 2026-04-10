@@ -61,12 +61,7 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="bg-white rounded-lg p-2 flex-shrink-0">
-                <Image src="/logo.svg" alt="YDC Academy" width={32} height={32} />
-              </div>
-              <span className="font-bold text-lg">YDC Academy</span>
-            </div>
+            <span className="font-bold text-lg block mb-3">YDC Academy</span>
             <p className="text-brand-200 text-sm leading-relaxed">{site.tagline}</p>
             <p className="text-brand-300 text-sm mt-3 leading-relaxed">{site.description}</p>
             {site.social.facebook && (
