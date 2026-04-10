@@ -335,8 +335,12 @@ export default async function Home() {
       </section>
 
       {/* LEAD FORM — trên testimonials */}
-      <section id="dang-ky" className="bg-brand-600 py-16">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+      <section id="dang-ky" className="relative py-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="/hero-bg.avif" alt="" className="w-full h-full object-cover brightness-50" />
+          <div className="absolute inset-0 bg-brand-900/80" />
+        </div>
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
               Đăng Ký Tham Dự Khóa Học
