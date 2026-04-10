@@ -67,7 +67,7 @@ body {
 }
 
 .animate-ticker {
-  animation: ticker 35s linear infinite;
+  animation: ticker 60s linear infinite;
 }
 
 /* Scroll reveal animation */
