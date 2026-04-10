@@ -207,9 +207,9 @@ export default async function Home() {
       <section className="bg-brand-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            {stats.map((s) => (
+            {stats.map((s, i) => (
               <div key={s.label}>
-                <p className="text-3xl font-extrabold"><CountUp value={s.value} /></p>
+                <p className="text-3xl font-extrabold"><CountUp value={s.value} delay={i * 150} /></p>
                 <p className="text-brand-100 text-sm mt-1">{s.label}</p>
               </div>
             ))}
