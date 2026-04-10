@@ -160,7 +160,7 @@ export default function TuVanDauThauPage() {
 
       {/* LEAD FORM */}
       <section className="bg-brand-600 py-14">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold text-white mb-3">Yêu Cầu Tư Vấn</h2>
             <p className="text-brand-200 text-sm">

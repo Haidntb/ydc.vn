@@ -11,8 +11,8 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="bg-white rounded-lg p-1.5 flex-shrink-0">
-                <Image src="/logo.svg" alt="YDC Academy" width={28} height={28} />
+              <div className="bg-white rounded-lg p-2 flex-shrink-0">
+                <Image src="/logo.svg" alt="YDC Academy" width={32} height={32} />
               </div>
               <span className="font-bold text-lg">YDC Academy</span>
             </div>
@@ -25,12 +25,13 @@ export default function Footer() {
             <h3 className="font-semibold text-xs uppercase tracking-wider text-brand-400 mb-4">
               Dịch vụ
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               {[
-                { href: '/khoa-hoc', label: 'Khóa Học Mở' },
-                { href: '/dao-tao-noi-bo', label: 'Đào Tạo Nội Bộ' },
-                { href: 'https://luyenthidauthau.ydc.vn/', label: 'Luyện Thi Đấu Thầu', external: true },
-                { href: '/khach-hang', label: 'Khách Hàng' },
+                { href: '/chuong-trinh-dao-tao', label: 'Chương Trình Đào Tạo' },
+                { href: '/dang-ky-to-chuc', label: 'Đăng Ký Cho Tổ Chức' },
+                { href: '/tu-van-dau-thau', label: 'Tư Vấn & Hỗ Trợ' },
+                { href: '/tin-tuc', label: 'Tin Tức' },
+                { href: 'https://luyenthidauthau.ydc.vn/', label: 'Thi Thử Đấu Thầu', external: true },
                 { href: '/ve-chung-toi', label: 'Về Chúng Tôi' },
                 { href: '/lien-he', label: 'Liên Hệ' },
               ].map((link) =>
@@ -40,10 +41,10 @@ export default function Footer() {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1 text-brand-300 hover:text-white text-sm transition-colors"
+                      className="flex items-center gap-1.5 text-brand-300 hover:text-white text-sm transition-colors"
                     >
                       {link.label}
-                      <Icon name="open_in_new" size={13} className="text-brand-500" />
+                      <Icon name="open_in_new" size={16} className="text-brand-500" />
                     </a>
                   </li>
                 ) : (
@@ -66,24 +67,24 @@ export default function Footer() {
               Liên hệ
             </h3>
             <ul className="space-y-3">
-              <li className="flex items-start gap-2.5 text-sm text-brand-300">
-                <Icon name="location_on" size={16} className="text-brand-500 mt-0.5 flex-shrink-0" />
+              <li className="flex items-start gap-3 text-sm text-brand-300">
+                <Icon name="location_on" size={18} className="text-brand-500 mt-0.5 flex-shrink-0" />
                 <span>{site.address}</span>
               </li>
-              <li className="flex items-center gap-2.5 text-sm">
-                <Icon name="phone" size={16} className="text-brand-500 flex-shrink-0" />
+              <li className="flex items-center gap-3 text-sm">
+                <Icon name="phone" size={18} className="text-brand-500 flex-shrink-0" />
                 <a href={`tel:${site.phone}`} className="text-brand-300 hover:text-white transition-colors">
                   {site.phone}
                 </a>
               </li>
-              <li className="flex items-center gap-2.5 text-sm">
-                <Icon name="mail" size={16} className="text-brand-500 flex-shrink-0" />
+              <li className="flex items-center gap-3 text-sm">
+                <Icon name="mail" size={18} className="text-brand-500 flex-shrink-0" />
                 <a href={`mailto:${site.email}`} className="text-brand-300 hover:text-white transition-colors">
                   {site.email}
                 </a>
               </li>
-              <li className="flex items-center gap-2.5 text-sm text-brand-300">
-                <Icon name="schedule" size={16} className="text-brand-500 flex-shrink-0" />
+              <li className="flex items-center gap-3 text-sm text-brand-300">
+                <Icon name="schedule" size={18} className="text-brand-500 flex-shrink-0" />
                 <span>{site.workingHours}</span>
               </li>
             </ul>
@@ -95,7 +96,7 @@ export default function Footer() {
                 className="inline-flex items-center gap-1.5 mt-5 text-sm text-brand-300 hover:text-white transition-colors"
               >
                 Facebook
-                <Icon name="arrow_forward" size={14} />
+                <Icon name="arrow_forward" size={16} />
               </a>
             )}
           </div>

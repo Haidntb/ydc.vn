@@ -56,10 +56,10 @@ export default function TestimonialCarousel({ testimonials }) {
       <div className="flex items-center justify-center gap-4 mt-8">
         <button
           onClick={() => { prev(); startTimer() }}
-          className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-50 hover:border-gray-300 transition-colors"
+          className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-50 hover:border-gray-300 transition-colors"
           aria-label="Trước"
         >
-          <Icon name="chevron_left" size={20} className="text-gray-500" />
+          <Icon name="chevron_left" size={22} className="text-gray-500" />
         </button>
 
         {/* Dots */}
@@ -80,10 +80,10 @@ export default function TestimonialCarousel({ testimonials }) {
 
         <button
           onClick={() => { next(); startTimer() }}
-          className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-50 hover:border-gray-300 transition-colors"
+          className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-50 hover:border-gray-300 transition-colors"
           aria-label="Tiếp"
         >
-          <Icon name="chevron_right" size={20} className="text-gray-500" />
+          <Icon name="chevron_right" size={22} className="text-gray-500" />
         </button>
       </div>
 

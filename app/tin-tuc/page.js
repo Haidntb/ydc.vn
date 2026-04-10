@@ -49,7 +49,7 @@ export default async function TinTucPage() {
                   <div className="p-5">
                     {post.date && (
                       <p className="text-xs text-gray-400 mb-2 flex items-center gap-1">
-                        <Icon name="calendar_month" size={12} />
+                        <Icon name="calendar_month" size={16} />
                         {post.date}
                       </p>
                     )}
@@ -62,7 +62,7 @@ export default async function TinTucPage() {
                       </p>
                     )}
                     <span className="inline-flex items-center gap-1 text-brand-600 text-sm font-semibold mt-3">
-                      Đọc thêm <Icon name="arrow_forward" size={14} />
+                      Đọc thêm <Icon name="arrow_forward" size={16} />
                     </span>
                   </div>
                 </Link>

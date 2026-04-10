@@ -169,7 +169,7 @@ export default async function Home() {
       <section className="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
           <div className="max-w-3xl">
-            <span className="inline-block bg-white/10 text-brand-100 text-sm font-medium px-3 py-1 rounded-full mb-6">
+            <span className="inline-block bg-white/10 text-brand-100 text-sm font-medium px-4 py-1.5 rounded-full mb-6">
               Trung Tâm Đào Tạo và Bồi Dưỡng Nghiệp Vụ Đấu Thầu
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-6">
@@ -186,7 +186,7 @@ export default async function Home() {
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white text-brand-800 font-bold text-base hover:bg-brand-50 transition-colors"
               >
                 Đăng Ký Tham Dự Khóa Học
-                <Icon name="arrow_forward" size={18} />
+                <Icon name="arrow_forward" size={20} />
               </a>
               <a
                 href="#lich-khai-giang"
@@ -237,7 +237,7 @@ export default async function Home() {
               <div className="space-y-7">
                 {audiences.map((item) => (
                   <div key={item.title} className="flex items-start gap-4">
-                    <div className="w-11 h-11 rounded-xl bg-brand-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Icon name={item.icon} size={22} className="text-brand-600" />
                     </div>
                     <div>
@@ -252,7 +252,7 @@ export default async function Home() {
                 className="inline-flex items-center gap-2 mt-10 px-6 py-3.5 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700 transition-colors"
               >
                 Ghi danh khóa học
-                <Icon name="arrow_forward" size={16} />
+                <Icon name="arrow_forward" size={18} />
               </a>
             </div>
 
@@ -317,7 +317,7 @@ export default async function Home() {
                 <ul className="space-y-1.5">
                   {subject.bullets.map((b) => (
                     <li key={b} className="flex items-start gap-2 text-sm text-gray-700">
-                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0" />
+                      <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0" />
                       {b}
                     </li>
                   ))}
@@ -330,7 +330,7 @@ export default async function Home() {
 
       {/* LEAD FORM — trên testimonials */}
       <section id="dang-ky" className="bg-brand-600 py-16">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
               Đăng Ký Tham Dự Khóa Học
@@ -360,7 +360,7 @@ export default async function Home() {
 
       {/* FAQ */}
       <section className="py-16">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
               Giải Đáp Thắc Mắc Thường Gặp
@@ -372,7 +372,7 @@ export default async function Home() {
                 key={i}
                 className="group bg-white rounded-xl border border-gray-200 overflow-hidden"
               >
-                <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer list-none font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
+                <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none font-semibold text-gray-900 hover:bg-gray-50 transition-colors">
                   {faq.q}
                   <Icon
                     name="expand_more"

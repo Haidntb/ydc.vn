@@ -181,7 +181,7 @@ export default function VeChungToiPage() {
                 </div>
                 <div className="col-span-2 px-4 py-4 flex flex-col justify-center">
                   <span className="inline-flex items-center gap-1 text-xs font-semibold text-green-700 bg-green-50 px-2 py-1 rounded-full w-fit">
-                    <Icon name="check_circle" size={11} />
+                    <Icon name="check_circle" size={14} />
                     {c.status}
                   </span>
                   {c.note && <p className="text-gray-400 text-xs mt-1 italic">{c.note}</p>}
@@ -201,7 +201,7 @@ export default function VeChungToiPage() {
             {team.map((member) => (
               <div key={member.id} className="border border-gray-200 rounded-xl overflow-hidden">
                 <div className="bg-brand-800 px-5 py-4 flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-white/15 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center flex-shrink-0">
                     <Icon name="person" size={20} className="text-white" />
                   </div>
                   <div>
@@ -236,7 +236,7 @@ export default function VeChungToiPage() {
                 <ul className="divide-y divide-gray-100">
                   {cat.clients.map((client) => (
                     <li key={client} className="flex items-center gap-2 px-4 py-2.5 bg-white">
-                      <Icon name="arrow_right" size={14} className="text-brand-400 flex-shrink-0" />
+                      <Icon name="arrow_right" size={16} className="text-brand-400 flex-shrink-0" />
                       <span className="text-gray-700 text-sm">{client}</span>
                     </li>
                   ))}

@@ -52,7 +52,7 @@ export default async function ChuongTrinhDaoTaoPage() {
                 <ul className="space-y-2">
                   {subject.bullets.map((b) => (
                     <li key={b} className="flex items-start gap-2 text-sm text-gray-700">
-                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-brand-600 flex-shrink-0" />
+                      <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand-600 flex-shrink-0" />
                       {b}
                     </li>
                   ))}
@@ -65,7 +65,7 @@ export default async function ChuongTrinhDaoTaoPage() {
 
       {/* LEAD FORM */}
       <section id="dang-ky" className="bg-brand-600 py-14">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold text-white mb-3">Đăng Ký Khóa Học</h2>
             <p className="text-brand-200 text-sm">

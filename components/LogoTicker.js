@@ -16,7 +16,7 @@ export default function LogoTicker({ clients }) {
         {items.map((name, i) => (
           <div
             key={i}
-            className="flex-shrink-0 flex items-center justify-center h-12 px-6 bg-white border border-gray-100 rounded-lg shadow-sm text-sm text-gray-500 font-medium whitespace-nowrap select-none"
+            className="flex-shrink-0 flex items-center justify-center h-14 px-6 bg-white border border-gray-100 rounded-lg shadow-sm text-sm text-gray-500 font-medium whitespace-nowrap select-none"
           >
             {name}
           </div>

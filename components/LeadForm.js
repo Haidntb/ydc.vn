@@ -72,7 +72,7 @@ function LeadFormInner({ variant = 'default', title, subtitle, courses: coursesP
   }
 
   const inputCls =
-    'w-full px-3 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent'
+    'w-full px-4 py-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent'
 
   return (
     <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8">
@@ -83,7 +83,7 @@ function LeadFormInner({ variant = 'default', title, subtitle, courses: coursesP
 
         {/* Cá nhân / Tổ chức toggle */}
         {(variant === 'default' || variant === 'course') && (
-          <div className="flex gap-1.5 p-1 bg-gray-100 rounded-full">
+          <div className="flex gap-2 p-1.5 bg-gray-100 rounded-full">
             <button
               type="button"
               onClick={() => setRegistrationType('individual')}
@@ -94,7 +94,7 @@ function LeadFormInner({ variant = 'default', title, subtitle, courses: coursesP
               }`}
             >
               <span className="flex items-center justify-center gap-1.5">
-                <Icon name="person" size={15} />
+                <Icon name="person" size={18} />
                 Cá nhân
               </span>
             </button>
@@ -108,7 +108,7 @@ function LeadFormInner({ variant = 'default', title, subtitle, courses: coursesP
               }`}
             >
               <span className="flex items-center justify-center gap-1.5">
-                <Icon name="corporate_fare" size={15} />
+                <Icon name="corporate_fare" size={18} />
                 Cho tổ chức
               </span>
             </button>
@@ -192,7 +192,7 @@ function LeadFormInner({ variant = 'default', title, subtitle, courses: coursesP
 
         {status === 'error' && (
           <div className="flex items-center gap-2 text-red-600 text-sm">
-            <Icon name="error" size={16} />
+            <Icon name="error" size={18} />
             Có lỗi xảy ra. Vui lòng thử lại hoặc liên hệ trực tiếp qua điện thoại.
           </div>
         )}
@@ -216,7 +216,7 @@ function LeadFormInner({ variant = 'default', title, subtitle, courses: coursesP
         </button>
 
         <p className="flex items-center justify-center gap-1 text-xs text-gray-400">
-          <Icon name="lock" size={12} />
+          <Icon name="lock" size={16} />
           Thông tin của bạn được bảo mật tuyệt đối
         </p>
       </form>

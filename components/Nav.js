@@ -57,7 +57,7 @@ export default function Nav() {
           </Link>
 
           {/* Desktop nav — pushed right with ml-auto */}
-          <nav className="hidden lg:flex items-center gap-0.5 ml-auto mr-4">
+          <nav className="hidden lg:flex items-center gap-1 ml-auto mr-4">
             {navLinks.map((link) => {
               const isActive = pathname === link.href
               return link.external ? (
@@ -93,14 +93,14 @@ export default function Nav() {
               href={examLink.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-1 px-4 py-2 rounded-lg bg-gray-900 text-white text-sm font-semibold hover:bg-gray-800 transition-colors"
+              className="hidden sm:inline-flex items-center gap-1.5 px-5 py-2.5 rounded-lg bg-gray-900 text-white text-xs font-semibold hover:bg-gray-800 transition-colors"
             >
               {examLink.label}
               <Icon name="open_in_new" size={14} />
             </a>
             <Link
               href="/lien-he"
-              className="hidden sm:inline-flex items-center px-4 py-2 rounded-lg bg-brand-600 text-white text-sm font-semibold hover:bg-brand-700 transition-colors"
+              className="hidden sm:inline-flex items-center px-5 py-2.5 rounded-lg bg-brand-600 text-white text-xs font-semibold hover:bg-brand-700 transition-colors"
             >
               Liên Hệ
             </Link>
