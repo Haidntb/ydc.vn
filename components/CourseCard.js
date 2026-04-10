@@ -7,7 +7,7 @@ export default function CourseCard({ course, registerPath = '/' }) {
   const isOnline = course.format === 'online'
 
   return (
-    <div className={`rounded-2xl border border-gray-200 p-6 flex flex-col gap-4 bg-white transition-shadow hover:shadow-md`}>
+    <div className={`rounded-2xl shadow-sm p-7 flex flex-col gap-5 bg-white transition-shadow hover:shadow-lg`}>
 
       {/* Badge + status */}
       <div className="flex items-center justify-between gap-2">
